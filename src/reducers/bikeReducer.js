@@ -1,4 +1,4 @@
-import { ADD_BIKEFEATURE } from "../actions/bikeActions";
+import { ADD_BIKE_FEATURE } from "../actions/bikeActions";
 
 const initialState = {
   additionalPrice: 0,
@@ -28,7 +28,7 @@ const initialState = {
 
 export const bikeReducer = (state = initialState, action) => {
   switch (action.type) {
-    case ADD_BIKEFEATURE:
+    case ADD_BIKE_FEATURE:
       return {
         ...state,
         car: {
